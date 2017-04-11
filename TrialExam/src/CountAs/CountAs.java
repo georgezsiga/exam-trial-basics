@@ -47,7 +47,8 @@ public class CountAs {
         map.put(ch, 1);
       }
     }
-    System.out.println(map);
+    int numberofAs = map.get('a');
+    System.out.println(numberofAs);
     return map;
   }
 
