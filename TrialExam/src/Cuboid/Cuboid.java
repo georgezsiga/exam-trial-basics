@@ -9,21 +9,21 @@ package Cuboid;
 // It should have a method called `getVolume` that returns the cuboid's volume
 public class Cuboid {
 
-  int length, width, height;
+  private int length, width, height;
 
-  public Cuboid(int length, int width, int height) {
+  private Cuboid(int length, int width, int height) {
     this.length = length;
     this.width = width;
     this.height = height;
   }
 
-  public int getSurface() {
+  private int getSurface() {
     int surface = 2 * ((length * width) + (width * height) + (height * length));
     System.out.println("The surface of the cuboid is: " + surface);
     return surface;
   }
 
-  public int getVolume() {
+  private int getVolume() {
     int volume = length * width * height;
     System.out.println("The volume of the cuboid is: " + volume);
     return volume;
