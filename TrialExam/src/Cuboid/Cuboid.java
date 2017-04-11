@@ -12,9 +12,14 @@ public class Cuboid {
     this.height = height;
   }
 
-  public double getSurface() {
-  double surface = 2 * ((length * width) + (width * height) + (height * length));
+  public int getSurface() {
+  int surface = 2 * ((length * width) + (width * height) + (height * length));
   return surface;
+  }
+
+  public int volume() {
+    int volume = length * width * height;
+    return volume;
   }
 
   // Create a class that represents a cuboid:
