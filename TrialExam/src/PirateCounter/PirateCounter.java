@@ -15,8 +15,8 @@ public class PirateCounter {
     String piratesWithNoLegAndWithGold = "";
     for (int i = 0; i < arrayList.size(); i++) {
       Pirate pirate = (Pirate) arrayList.get(i);
-      if (pirate.hasWoodenLeg && (pirate.getGold() > 15)) {
-        piratesWithNoLegAndWithGold = piratesWithNoLegAndWithGold + " " + pirate.getName();
+      if (pirate.hasWoodenLeg && (pirate.gold > 15)) {
+        piratesWithNoLegAndWithGold = piratesWithNoLegAndWithGold + " " + pirate.name;
       }
     }
     System.out.println(piratesWithNoLegAndWithGold);
