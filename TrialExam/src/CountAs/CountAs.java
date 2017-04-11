@@ -38,9 +38,10 @@ public class CountAs {
 
   public HashMap<Character, Integer> numberOfAs(String string) {
     String lettersFromFile = readFile(string).toString();
+    lettersFromFile = lettersFromFile.toLowerCase();
     HashMap<Character, Integer> map = new HashMap<>();
     for (char ch : lettersFromFile.toCharArray()) {
-      if (map.containsKey("a")) {
+      if (map.containsKey(ch)) {
         int val = map.get(ch);
         map.put(ch, val + 1);
       } else {
@@ -54,7 +55,5 @@ public class CountAs {
   public static void main(String[] args) {
     CountAs countAs = new CountAs();
     countAs.numberOfAs("src/CountAs/afile.txt");
-
-
   }
 }
