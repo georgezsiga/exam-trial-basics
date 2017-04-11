@@ -8,6 +8,7 @@ package Cuboid;
 // It should have a method called `getSurface` that returns the cuboid's surface
 // It should have a method called `getVolume` that returns the cuboid's volume
 public class Cuboid {
+
   int length, width, height;
 
   public Cuboid(int length, int width, int height) {
@@ -17,9 +18,9 @@ public class Cuboid {
   }
 
   public int getSurface() {
-  int surface = 2 * ((length * width) + (width * height) + (height * length));
+    int surface = 2 * ((length * width) + (width * height) + (height * length));
     System.out.println("The surface of the cuboid is: " + surface);
-  return surface;
+    return surface;
   }
 
   public int getVolume() {
@@ -33,5 +34,4 @@ public class Cuboid {
     cuboid.getSurface();
     cuboid.getVolume();
   }
-
 }
