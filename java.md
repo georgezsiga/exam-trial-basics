@@ -32,4 +32,5 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: int randomNumber = (int) (Math.random() *  b + a ); - this will generate a random number between "a" and "b" including both numbers. If "b" is not there than the result will be 0 to "a", where "a" is not included.
+
