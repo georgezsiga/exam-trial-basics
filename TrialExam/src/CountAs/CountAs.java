@@ -11,6 +11,12 @@ import java.util.List;
 /**
  * Created by georgezsiga on 4/11/17.
  */
+// Create a function that takes a filename as string parameter,
+// counts the occurances of the letter "a" in the file, and returns it as a number.
+// If the file does not exist, the function should return 0 and not break.
+
+// example: on the input "afile.txt" the function should return 28 - print this result
+// example: on the input "not-a-file" the function should return 0 - print this result
 public class CountAs {
 
   public CountAs() {
@@ -23,7 +29,7 @@ public class CountAs {
       Path filePath = Paths.get(filename);
       linesInTheFile = Files.readAllLines(filePath);
     } catch (IOException e) {
-      e.printStackTrace();
+//      e.printStackTrace();
       System.out.println("0");
       System.exit(0);
     }
@@ -45,35 +51,10 @@ public class CountAs {
     return map;
   }
 
-
-
-
-
-//  public int checkTheAs(String string) {
-//    String lettersFromFile = readFile(string).toString();
-//    int numberOfAs = 0;
-//    char temp =;
-//    for (int i = 0; i < lettersFromFile.length() ; i++) {
-//      Character.isLetter()
-//        temp = lettersFromFile.charAt(i);
-//if (Character.isLetter(temp) ) {
-//
-//}
-//    }
-//
-//    return numberOfAs;
-//  }
-
   public static void main(String[] args) {
     CountAs countAs = new CountAs();
-    countAs.numberOfAs("afile.txt");
-//    countAs.checkTheAs("afile.txt");
-    // Create a function that takes a filename as string parameter,
-    // counts the occurances of the letter "a" in the file, and returns it as a number.
-    // If the file does not exist, the function should return 0 and not break.
+    countAs.numberOfAs("src/CountAs/afile.txt");
 
-    // example: on the input "afile.txt" the function should return 28 - print this result
-    // example: on the input "not-a-file" the function should return 0 - print this result
 
   }
 }
