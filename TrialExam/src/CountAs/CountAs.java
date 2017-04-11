@@ -29,7 +29,6 @@ public class CountAs {
       Path filePath = Paths.get(filename);
       linesInTheFile = Files.readAllLines(filePath);
     } catch (IOException e) {
-//      e.printStackTrace();
       System.out.println("0");
       System.exit(0);
     }
@@ -45,7 +44,7 @@ public class CountAs {
         int val = map.get(ch);
         map.put(ch, val + 1);
       } else {
-
+        map.put(ch, 1);
       }
     }
     System.out.println(map);
