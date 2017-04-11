@@ -12,6 +12,11 @@ public class Cuboid {
     this.height = height;
   }
 
+  public double getSurface() {
+  double surface = 2 * ((length * width) + (width * height) + (height * length));
+  return surface;
+  }
+
   // Create a class that represents a cuboid:
   // It should take its three dimensions as constructor parameters (numbers)
   // It should have a method called `getSurface` that returns the cuboid's surface
