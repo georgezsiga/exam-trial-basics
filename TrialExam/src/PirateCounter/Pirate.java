@@ -4,6 +4,7 @@ package PirateCounter;
  * Created by georgezsiga on 4/11/17.
  */
 public class Pirate {
+
   String name;
   boolean hasWoodenLeg;
   int gold;
@@ -13,4 +14,5 @@ public class Pirate {
     this.hasWoodenLeg = hasWoodenLeg;
     this.gold = gold;
   }
+
 }
